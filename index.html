@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reinier Lammerts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FBF7EE;
+      color: #1F2A3A;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      padding: 3.5rem 1.5rem 5rem;
+    }
+
+    nav {
+      max-width: 700px;
+      margin: 0 auto 3.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem 1.75rem;
+    }
+
+    nav a {
+      font-size: 0.95rem;
+      color: #B8923A;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #96731F;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    nav a[aria-current="page"] {
+      color: #96731F;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Photo + title side-by-side block */
+    .intro-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro-photo {
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+
+    .intro-titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0.25rem;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .tagline {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #4A5568;
+      max-width: 440px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #D9CDB8;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: #B8923A;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: #96731F;
+    }
+
+    .muted {
+      color: #9A8E7E;
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 540px) {
+      body {
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      .intro-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+      }
+
+      .intro-photo {
+        width: 160px;
+        height: 160px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="over.html">Over mij</a>
+    <a href="werk.html">Wat ik doe</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="intro-header">
+      <img
+        src="reinier.jpg"
+        alt="Foto van Reinier Lammerts"
+        class="intro-photo"
+        width="200"
+        height="200"
+      >
+      <div class="intro-titles">
+        <h1>Reinier Lammerts</h1>
+        <p class="tagline">Ik help organisaties orde scheppen op het snijvlak van business, processen, informatie en IT — door te analyseren, te ontwerpen en te verbinden.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <p>Welkom. Ik ben business architect, procesarchitect en business analist — en werk al ruim twintig jaar op het snijvlak van strategie, processen, informatie en IT. Mijn opdrachtgevers zijn meestal grote organisaties in de rijksoverheid of de financiële sector, maar ook grote corporates als ASML. De vraagstukken zijn steeds anders, de kern is hetzelfde: hoe vertaal je wat een organisatie wil doen naar iets dat ook daadwerkelijk werkt?</p>
+
+    <p>Wat me in dat werk drijft is niet het eindproduct op zich — de architectuurplaat, het rapport, de roadmap — maar wat erachter zit. Ik hou van een ingewikkeld vraagstuk: erin duiken, snel grip krijgen op hoe het in elkaar zit, en dan stap voor stap structuur aanbrengen. Het mooiste moment is als een opdrachtgever merkt dat een proces of systeem echt beter werkt, dat het verschil maakt in de praktijk. Dat geeft me meer voldoening dan iets dat alleen op papier klopt.</p>
+
+    <p>Buiten mijn werk woon ik samen met mijn vrouw en drie kinderen in Leersum. Je vindt me op de padelbaan, op de fiets, of langs de lijn bij voetbal en hockey. Die afwisseling — analytisch werk en fysieke ontspanning — past bij me.</p>
+  </main>
+</body>
+</html>
